@@ -99,7 +99,8 @@ log "installing blocks."
 
   oneblock f 2001-costero-0
   oneblock g 2000-fast-guiding-0
-  oneblock h 2002-pereyra-0
+  oneblock h 2003-gonzalez-0
+  oneblock i 2002-pereyra-0
 
   allblocks m 0004-initial-focus
   allblocks n 0004-focus
