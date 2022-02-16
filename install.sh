@@ -7,7 +7,7 @@ sudo -v
 ################################################################################
 
 log () {
-  echo 1>&2 "$(date '+%Y-%m-%d %H:%M:%S'): $(basename $0): $@"
+  echo 1>&2 "$(date -u '+%F %T'): $(basename $0): $@"
 }
 
 ################################################################################
@@ -51,7 +51,7 @@ allblocks () {
   fi
   priority=$1
   prefix=$2
-  log "priority $priority: all $prefix-* blocks."
+  log "installing $priority-$prefix-*.json."
   for file in $prefix-*.json
   do
     echo cp $file $dir/$priority-$file
@@ -66,7 +66,7 @@ oneblock () {
   fi
   priority=$1
   prefix=$2
-  log "priority $priority: one $prefix block."
+  log "installing $priority-$prefix.json."
   echo cp $prefix.json $dir/$priority-$prefix.json
 }
 
