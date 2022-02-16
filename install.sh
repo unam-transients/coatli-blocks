@@ -84,13 +84,7 @@ log "installing blocks."
 
 (
   echo mkdir -p $dir
-  
-  if test "$date" = "default"  
-  then
-    echo rm -rf $dir
-  fi
-
-  echo mkdir -p $dir
+  echo rm -rf $dir/*
 
   if test "$date" != "default"  
   then
