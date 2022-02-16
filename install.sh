@@ -103,9 +103,9 @@ log "installing blocks."
 
   fi
 
-  oneblock f 2022A-2001-costero-0
-  oneblock g 2022A-2000-fast-guiding-0
-  oneblock h 2022A-2002-pereyra-0
+  oneblock f 2001-costero-0
+  oneblock g 2000-fast-guiding-0
+  oneblock h 2002-pereyra-0
 
   allblocks m 0004-initial-focus
   allblocks n 0004-focus
