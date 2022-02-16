@@ -1,6 +1,23 @@
 #!/bin/sh
 
-cd "$(dirname "$0")"
+################################################################################
+
+sudo -v
+
+################################################################################
+
+log () {
+  echo 1>&2 "$(date '+%Y-%m-%d %H:%M:%S'): $(basename $0): $@"
+}
+
+################################################################################
+
+log "starting."
+
+################################################################################
+
+cd $(dirname "$0")
+log "working in $(pwd)/."
 
 ################################################################################
 
@@ -15,11 +32,12 @@ default|[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])
   date=$(date +%Y%m%d -d "$1")
   ;;
 esac
-echo "$date"
 if test "$date" = "default"
 then
+  log "installing default blocks."
   dir=/usr/local/etc/tcs/blocks
 else
+  log "installing blocks for $date."
   dir=/usr/local/var/tcs/$date/blocks
 fi
 
@@ -33,30 +51,36 @@ allblocks () {
   fi
   priority=$1
   prefix=$2
+  log "priority $priority: all $prefix-* blocks."
   for file in $prefix-*.json
   do
     echo cp $file $dir/$priority-$file
   done
 }
 
-singleblock () {
+oneblock () {
   if test $# != 2
   then
-    echo 1>&2 "usage: singleblock priority prefix"
+    echo 1>&2 "usage: oneblock priority prefix"
     exit 1
   fi
   priority=$1
   prefix=$2
+  log "priority $priority: one $prefix block."
   echo cp $prefix.json $dir/$priority-$prefix.json
 }
 
 ################################################################################
+
+log "generating blocks."
 
 sh blocks-focus.sh
 sh blocks-donut.sh
 sh blocks-pointing-map.sh
 
 ################################################################################
+
+log "installing blocks."
 
 (
   echo mkdir -p $dir
@@ -75,13 +99,13 @@ sh blocks-pointing-map.sh
     
     #allblocks v 0012-focus-offsets
     #allblocks w 0008-pointing-map
-    allblocks o 0007-donut
+    #allblocks o 0007-donut
 
   fi
 
-  singleblock f 2022A-2001-costero-0
-  singleblock g 2022A-2000-fast-guiding-0
-  singleblock h 2022A-2002-pereyra-0
+  oneblock f 2022A-2001-costero-0
+  oneblock g 2022A-2000-fast-guiding-0
+  oneblock h 2022A-2002-pereyra-0
 
   allblocks m 0004-initial-focus
   allblocks n 0004-focus
@@ -94,12 +118,22 @@ sh blocks-pointing-map.sh
 
 ) | sudo sh
 
+log "finished installing blocks."
+
 ################################################################################
+
+log "cleaning generated blocks."
 
 rm -f 0007-donut-*.json
 rm -f 0004-initial-focus-*.json
 rm -f 0004-focus-*.json
 rm -f 0008-pointing-map-*.json
 rm -f 0012-focus-offsets-*.json
+
+################################################################################
+
+log "finished."
+
+exit 0
 
 ################################################################################
