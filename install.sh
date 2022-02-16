@@ -52,9 +52,9 @@ singleblock () {
 
 ################################################################################
 
-sh focus.sh
-sh donut.sh
-sh pointing-map.sh
+sh blocks-focus.sh
+sh blocks-donut.sh
+sh blocks-pointing-map.sh
 
 ################################################################################
 
