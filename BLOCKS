@@ -1,38 +1,38 @@
-# COATLI Blocks
+# COATLI/OAN Blocks
 #
-# This file defines the blocks that are installed every day at 00:00 UTC.
+# This file defines the blocks that are loaded into the queue.
 #
-# The fields are:
+# Empty lines and lines beginning with # are ignored.
+#
+# The first three fields are:
 #
 # 1. Priority. A letter, with a being highest priority and z being lowest
 # priority.
 #
-# 2. Duplicates. The number of copies of the block file that are added to the
-# queue. This is useful when breaking long observations into shorter blocks.
-# Simply set this field to the number times you want to run the shorter block.
+# 2. Duplicates. The number of copies of the block file that are loaded into the
+# queue. This is useful when breaking long observations into shorter blocks;
+# simply set this field to the number times you want to run the shorter block.
 #
 # 3. Block file. This can be a file name or a shell glob pattern to match a set
 # of file names. Omit the trailing ".json".
 #
 # After the first three columns, it is possible to add a time specification:
 #
-# - every N M. Add the files to the queue every Nth day of M. Specifically, only
-# add the block files to the queue if N = D % M in which D is the day of the
+# - day M N. Load the files into the queue every N days. Specifically, only load
+# the block files into the queue if M = D mod N, in which D is the day of the
 # year (1 to 366).
 #
-# - on YYYMMDD. Add the files to the queue on the specified date.
+# - on YYYMMDD. Load the files into the queue on the specified UTC date.
 #
-# If no time specification is given, the block files are added to the queue
+# If no time specification is given, the block files are loaded into the queue
 # every day.
-#
-# Empty lines and lines beginning with # are ignored.
 
 a 1 0004-initial-focus-*
 b 1 0004-focus-*
 
 f 1 2001-costero-0
-g 1 2000-fast-guiding-0 every 0 2
-h 3 2003-gonzalez-0     on    20220218
+g 1 2000-fast-guiding-0 day 0 2
+h 3 2003-gonzalez-0     on 20220218
 i 1 2002-pereyra-0
     
 x 1 0001-twilight-flats-evening-0

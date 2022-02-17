@@ -74,7 +74,7 @@ NF >= 3 {
   duplicates = $2
   blockfile  = $3
 }
-NF == 6 && $4 == "every" {
+NF == 6 && $4 == "day" {
   phase = $5
   period = $6
   if (phase != targetdayofyear % period)
