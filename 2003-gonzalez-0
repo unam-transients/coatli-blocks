@@ -45,7 +45,8 @@
  ],
  "constraints": {
    "maxskybrightness": "bright",
-   "maxairmass": "1.5"
+   "maxairmass": "1.5",
+   "minmoondistance": "15d"
  },
  "persistent": "false"
 }

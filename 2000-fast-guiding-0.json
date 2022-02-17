@@ -83,7 +83,7 @@
    "maxskybrightness": "astronomicaltwilight",
    "minha": "-3.0h",
    "maxha": "+3.0h",
-   "maxfocusdelay": "1200"
+   "minmoondistance": "15d"
  },
  "persistent": "false"
 }

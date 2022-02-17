@@ -46,7 +46,7 @@
  "constraints": {
    "maxskybrightness": "astronomicaltwilight",
    "maxairmass": "2.0",
-   "maxfocusdelay": "1200"
+   "minmoondistance": "15d"
  },
  "persistent": "true"
 }
