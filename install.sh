@@ -97,14 +97,15 @@ log "installing blocks."
 
   fi
 
+  allblocks a 0004-initial-focus
+  allblocks b 0004-focus
+
   oneblock f 2001-costero-0
   oneblock g 2000-fast-guiding-0
   oneblock h 2003-gonzalez-0
   oneblock i 2002-pereyra-0
 
-  allblocks m 0004-initial-focus
-  allblocks n 0004-focus
-  
+    
   allblocks x 0001-twilight-flats-evening
   allblocks y 0002-biases
   #allblocks y 0013-readnoise
