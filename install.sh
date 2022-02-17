@@ -21,54 +21,27 @@ log "working in $(pwd)/."
 
 ################################################################################
 
-case $1 in
-default|[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])
-  date="$1"
-  ;;
-"")
-  date=$(date +%Y%m%d -d tomorrow)
-  ;;
-*)
-  date=$(date +%Y%m%d -d "$1")
-  ;;
-esac
-if test "$date" = "default"
-then
-  log "installing default blocks."
-  dir=/usr/local/etc/tcs/blocks
-else
-  log "installing blocks for $date."
-  dir=/usr/local/var/tcs/$date/blocks
-fi
+queuedir=/usr/local/var/tcs/blocks
+sudo mkdir -p "$queuedir"
 
 ################################################################################
 
-allblocks () {
-  if test $# != 2
-  then
-    echo 1>&2 "usage: allblocks priority prefix"
-    exit 1
-  fi
-  priority=$1
-  prefix=$2
-  log "installing $priority-$prefix-*.json."
-  for file in $prefix-*.json
-  do
-    echo cp $file $dir/$priority-$file
-  done
-}
+case $1 in
+"")
+  targetdate=$(date +%Y%m%d)
+  ;;
+[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])
+  targetdate="$1"
+  ;;
+*)
+  targetdate=$(date +%Y%m%d -d "$1")
+  ;;
+esac
 
-oneblock () {
-  if test $# != 2
-  then
-    echo 1>&2 "usage: oneblock priority prefix"
-    exit 1
-  fi
-  priority=$1
-  prefix=$2
-  log "installing $priority-$prefix.json."
-  echo cp $prefix.json $dir/$priority-$prefix.json
-}
+log "target date $targetdate."
+
+targetdayofyear="$(date +%j -d $targetdate | sed 's/^0*//')"
+log "target day of year is $targetdayofyear."
 
 ################################################################################
 
@@ -82,37 +55,46 @@ sh blocks-pointing-map.sh
 
 log "installing blocks."
 
-(
-  echo mkdir -p $dir
-  echo rm -rf $dir/*
-
-  if test "$date" != "default"  
-  then
-    
-    :
-    
-    #allblocks v 0012-focus-offsets
-    #allblocks w 0008-pointing-map
-    #allblocks o 0007-donut
-
-  fi
-
-  allblocks a 0004-initial-focus
-  allblocks b 0004-focus
-
-  oneblock f 2001-costero-0
-  oneblock g 2000-fast-guiding-0
-  oneblock h 2003-gonzalez-0
-  oneblock i 2002-pereyra-0
-
-    
-  allblocks x 0001-twilight-flats-evening
-  allblocks y 0002-biases
-  #allblocks y 0013-readnoise
-  #allblocks z 0003-darks
-
-
-) | sudo sh
+expand BLOCKS |
+awk \
+ -v queuedir="$queuedir" \
+ -v targetdate="$targetdate" \
+ -v targetdayofyear="$targetdayofyear" \
+'
+/^ *#/ {
+  # Skip comment lines.
+  next;
+}
+/^ *$/ {
+  # Skip empty lines.
+  next;
+}
+NF >= 3 {
+  priority   = $1
+  duplicates = $2
+  blockfile  = $3
+}
+NF == 6 && $4 == "every" {
+  phase = $5
+  period = $6
+  if (phase != targetdayofyear % period)
+    next;
+}
+NF == 5 && $4 == "on" {
+  date = $5
+  if (date != targetdate)
+    next;
+}
+{
+  if (duplicates > 999) {
+    duplicates = 999
+  }
+}
+{
+  for (i = 0; i < duplicates; ++i)
+    printf("for blockfile in %s.json; do cp $blockfile %s/%s-%03d-$blockfile; done\n", blockfile, queuedir, priority, i)
+}
+' | sudo sh -x
 
 log "finished installing blocks."
 
@@ -120,9 +102,9 @@ log "finished installing blocks."
 
 log "cleaning generated blocks."
 
-rm -f 0007-donut-*.json
 rm -f 0004-initial-focus-*.json
 rm -f 0004-focus-*.json
+rm -f 0007-donut-*.json
 rm -f 0008-pointing-map-*.json
 rm -f 0012-focus-offsets-*.json
 
