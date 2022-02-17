@@ -13,7 +13,7 @@
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit 656/3 7",
+      "command": "twilightflatsvisit 7 656/3",
       "estimatedduration": "2m"
     },
     {
@@ -24,7 +24,7 @@
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit 640/10 7",
+      "command": "twilightflatsvisit 7 640/10",
       "estimatedduration": "2m"
     },
     // 515/10 was removed on 2021-11-21.
@@ -36,7 +36,7 @@
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit 470/10 7",
+      "command": "twilightflatsvisit 7 470/10",
       "estimatedduration": "2m"
     },
     {
@@ -47,7 +47,7 @@
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit z 7",
+      "command": "twilightflatsvisit 7 z",
       "estimatedduration": "2m"
     },
     {
@@ -58,7 +58,7 @@
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit i 7",
+      "command": "twilightflatsvisit 7 i",
       "estimatedduration": "2m"
     },
     {
@@ -69,7 +69,7 @@
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit r 7",
+      "command": "twilightflatsvisit 7 r",
       "estimatedduration": "2m"
     },
     {
@@ -80,7 +80,7 @@
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit g 7",
+      "command": "twilightflatsvisit 7 g",
       "estimatedduration": "2m"
     }
   ],

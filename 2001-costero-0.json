@@ -15,7 +15,7 @@
        "delta"  : "-05:23:22.8",
        "equinox": "2000"
      },
-     "command": "pointingcorrectionvisit 640/10 5",
+     "command": "pointingcorrectionvisit 5 640/10",
      "estimatedduration": "1m"
    },
    {
@@ -27,7 +27,7 @@
        "delta"  : "-05:23:22.8",
        "equinox": "2000"
      },
-     "command": "focusvisit z 5",
+     "command": "focusvisit 5 z",
      "estimatedduration": "2m"
    },
    {

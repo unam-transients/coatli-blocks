@@ -190,7 +190,7 @@ EOF
         "delta"  : "$delta",
         "equinox": "2000"
       },
-      "command": "focusvisit 0 5 em-30MHz-0-100",
+      "command": "focusvisit 5 g",
       "estimatedduration": "2m"
     },
     {
@@ -202,7 +202,7 @@ EOF
         "delta"  : "$delta",
         "equinox": "2000"
       },
-      "command": "focusvisit 1 5 em-30MHz-0-100",
+      "command": "focusvisit 5 r",
       "estimatedduration": "2m"
     },
     {
@@ -214,7 +214,7 @@ EOF
         "delta"  : "$delta",
         "equinox": "2000"
       },
-      "command": "focusvisit 2 5 em-30MHz-0-100",
+      "command": "focusvisit 5 i",
       "estimatedduration": "2m"
     },
     {
@@ -226,7 +226,7 @@ EOF
         "delta"  : "$delta",
         "equinox": "2000"
       },
-      "command": "focusvisit 3 5 em-30MHz-0-100",
+      "command": "focusvisit 5 z",
       "estimatedduration": "2m"
     },
     {
@@ -238,7 +238,7 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "coarsefocusvisit 6 5",
+      "command": "coarsefocusvisit 5 640/10",
       "estimatedduration": "2m"
     },
     {
@@ -250,7 +250,7 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "focusvisit 470/10 5 em-30MHz-0-100",
+      "command": "focusvisit 5 470/10",
       "estimatedduration": "2m"
     },
     // 515/10 was removed on 2021-11-21.
@@ -263,7 +263,7 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "focusvisit 6 5 em-30MHz-0-100",
+      "command": "focusvisit 5 640/10",
       "estimatedduration": "2m"
     },
     {
@@ -275,7 +275,7 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "focusvisit 7 5 em-30MHz-0-100",
+      "command": "focusvisit 5 656/3",
       "estimatedduration": "2m"
     },
     {
