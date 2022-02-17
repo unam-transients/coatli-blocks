@@ -47,9 +47,11 @@ log "target day of year is $targetdayofyear."
 
 log "generating blocks."
 
-sh blocks-focus.sh
-sh blocks-donut.sh
-sh blocks-pointing-map.sh
+for script in blocks-*.sh
+do
+  log "running $script generate."
+  sh $script generate
+done
 
 ################################################################################
 
@@ -101,6 +103,12 @@ log "finished installing blocks."
 ################################################################################
 
 log "cleaning generated blocks."
+
+for script in *.sh
+do
+  log "running $script clean."
+  sh $script generate
+done
 
 rm -f 0004-initial-focus-*.json
 rm -f 0004-focus-*.json

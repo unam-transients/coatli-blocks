@@ -1,12 +1,11 @@
 #!/bin/sh
 
-# These are VT ≈ 12.0 and VT ≈ 7.5 Tycho 2 stars spaced every hour at +25d.
-# They were selected using http://vizier.u-strasbg.fr/.
-
 rm -f 0007-donut-*
 
-focusfilter="r"
-correctpointingfilter="r"
+if test "$1" = "clean"
+then
+  exit
+fi
 
 i=0
 while read TYC ALPHA DELTA

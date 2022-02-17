@@ -1,13 +1,12 @@
 #!/bin/sh
 
-# These are VT ≈ 12.0 and VT ≈ 7.5 Tycho 2 stars spaced every hour at +25d.
-# They were selected using http://vizier.u-strasbg.fr/.
+rm -f 0004-initial-focus-*.json
+rm -f 0004-focus-*.json
 
-rm -f 0004-initial-focus-*
-rm -f 0004-focus-*
-
-focusfilter="r"
-correctpointingfilter="r"
+if test "$1" = "clean"
+then
+  exit
+fi
 
 while read suffix blockid tyc alpha delta TYC ALPHA DELTA
 do
@@ -312,6 +311,9 @@ EOF
   "persistent": "false"
 }
 EOF
+
+# These are VT ≈ 12.0 and VT ≈ 7.5 Tycho 2 stars spaced every hour at +25d.
+# They were selected using http://vizier.u-strasbg.fr/.
 
 # The bright star for 00 was 2252-0220-1 23:58:03.867 +24:20:27.55, but this has a bright companion.
 # The faint star for 00 was 2252-0179-1 23:57:47.895 +24:58:33.35, but this has a bright companion.

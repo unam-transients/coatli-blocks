@@ -1,5 +1,13 @@
 #!/bin/sh
 
+rm -f 0008-pointing-map-*.json
+
+if test "$1" = "clean"
+then
+  exit
+fi
+
+
 # Pointing map visits typically take about 20 seconds when the slew is short and
 # 60 seconds when the slew is longer.
 
@@ -49,7 +57,7 @@ BEGIN {
 ' |
 while read blockid ha delta z
 do
-    cat >0008-pointing-map-$blockid <<EOF
+    cat >0008-pointing-map-$blockid.json <<EOF
 {
   "project": {
     "identifier": "0008",
