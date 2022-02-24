@@ -4,15 +4,15 @@
    "name": "Gonzalez AGN"
  },
  "identifier": "0",
- "name": "Mrk 509",
+ "name": "NGC 4395",
  "visits": [
    {
      "identifier": "1000",
      "name": "pointing correction",
      "targetcoordinates": {
        "type"   : "equatorial",
-       "alpha"  : "05:47:48.36",
-       "delta"  : "+28:35:11.2",
+       "alpha"  : "12:25:48.86",
+       "delta"  : "+33:32:48.7",
        "equinox": "2000"
      },
      "command": "pointingcorrectionvisit",
@@ -23,8 +23,8 @@
      "name": "focus",
      "targetcoordinates": {
        "type"   : "equatorial",
-       "alpha"  : "05:47:48.36",
-       "delta"  : "+28:35:11.2",
+       "alpha"  : "12:25:48.86",
+       "delta"  : "+33:32:48.7",
        "equinox": "2000"
      },
      "command": "focusvisit",
@@ -35,11 +35,11 @@
      "name": "science",
      "targetcoordinates": {
        "type"   : "equatorial",
-       "alpha"  : "05:47:48.36",
-       "delta"  : "+28:35:11.2",
+       "alpha"  : "12:25:48.86",
+       "delta"  : "+33:32:48.7",
        "equinox": "2000"
      },
-     "command": "gridvisit 1 5 1 60 {g r i z} false",
+     "command": "gridvisit 1 5 1 90 {g r i z} false",
      "estimatedduration": "20m"
    }
  ],
