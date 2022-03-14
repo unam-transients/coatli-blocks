@@ -1,0 +1,52 @@
+{
+ "project": {
+   "identifier": "2002",
+   "name": "Pereyra LMXBs"
+ },
+ "identifier": "2",
+ "name": "MAXI J1820+070",
+ "visits": [
+   {
+     "identifier": "1000",
+     "name": "pointing correction",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "18:20:21.94",
+       "delta"  : "+07:11:07.28",
+       "equinox": "2000"
+     },
+     "command": "pointingcorrectionvisit",
+     "estimatedduration": "1m"
+   },
+   {
+     "identifier": "1001",
+     "name": "focus",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "18:20:21.94",
+       "delta"  : "+07:11:07.28",
+       "equinox": "2000"
+     },
+     "command": "focusvisit",
+     "estimatedduration": "2m"
+   },
+   {
+     "identifier": "0",
+     "name": "science",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "18:20:21.94",
+       "delta"  : "+07:11:07.28",
+       "equinox": "2000"
+     },
+     "command": "gridvisit 1 5 2 30 {r} false",
+     "estimatedduration": "5m"
+   }
+ ],
+ "constraints": {
+   "maxskybrightness": "astronomicaltwilight",
+   "maxairmass": "2.0",
+   "minmoondistance": "15d"
+ },
+ "persistent": "true"
+}
