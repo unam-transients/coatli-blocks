@@ -27,7 +27,7 @@
        "delta"  : "+53:30:11.9",
        "equinox": "2000"
      },
-     "command": "focusvisit i 5",
+     "command": "focusvisit 5 i",
      "estimatedduration": "2m"
    },
    {
@@ -39,13 +39,13 @@
        "delta"  : "+53:30:11.9",
        "equinox": "2000"
      },
-     "command": "gridvisit 2 5 2 5 {g r i z}",
-     "estimatedduration": "20m"
+     "command": "gridvisit 1 5 2 15 {g r i z}",
+     "estimatedduration": "10m"
    },
  ],
  "constraints": {
    "maxskybrightness": "astronomicaltwilight",
    "maxairmass": "2.0",
  },
- "persistent": "true"
+ "persistent": "false"
 }
