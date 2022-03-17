@@ -1,0 +1,52 @@
+{
+    "project": {
+        "identifier": "2003",
+        "name": "Gonzalez Diego"
+    },
+    "identifier": "0",
+    "name": "Ton 618",
+    "visits": [
+        {
+            "identifier": "1000",
+            "name": "pointing correction",
+            "targetcoordinates": {
+                "type": "equatorial",
+                "alpha": "12:28:24.96",
+                "delta": "+31:28:37.62",
+                "equinox": "2000"
+            },
+            "command": "pointingcorrectionvisit",
+            "estimatedduration": "1m"
+        },
+        {
+            "identifier": "1001",
+            "name": "focus",
+            "targetcoordinates": {
+                "type": "equatorial",
+                "alpha": "12:28:24.96",
+                "delta": "+31:28:37.62",
+                "equinox": "2000"
+            },
+            "command": "focusvisit",
+            "estimatedduration": "2m"
+        },
+        {
+            "identifier": "0",
+            "name": "science",
+            "targetcoordinates": {
+                "type": "equatorial",
+                "alpha": "12:28:24.96",
+                "delta": "+31:28:37.62",
+                "equinox": "2000"
+            },
+            "command": "gridvisit 1 5 1 60 {g r i z} false",
+            "estimatedduration": "10m"
+        }
+    ],
+    "constraints": {
+        "maxskybrightness": "bright",
+        "maxairmass": "1.5",
+        "minmoondistance": "15d"
+    },
+    "persistent": "false"
+}
