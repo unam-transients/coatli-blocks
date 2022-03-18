@@ -27,7 +27,7 @@
        "delta"  : "+53:30:11.9",
        "equinox": "2000"
      },
-     "command": "focusvisit 5 i",
+     "command": "focusvisit",
      "estimatedduration": "2m"
    },
    {
