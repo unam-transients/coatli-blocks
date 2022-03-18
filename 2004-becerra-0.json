@@ -46,6 +46,7 @@
  "constraints": {
    "maxskybrightness": "astronomicaltwilight",
    "maxairmass": "2.0",
+   "minmoondistance": "15d"
  },
- "persistent": "false"
+ "persistent": "true"
 }
