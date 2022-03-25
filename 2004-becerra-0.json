@@ -1,7 +1,7 @@
 {
  "project": {
    "identifier": "2004",
-   "name": "Becerra NGC 3310"
+   "name": "Becerra NGC3310"
  },
  "identifier": "0",
  "name": "NGC 3310",
@@ -39,8 +39,8 @@
        "delta"  : "+53:30:11.9",
        "equinox": "2000"
      },
-    "command": "gridvisit 1 5 2 30 {r} false",
-     "estimatedduration": "5m"
+     "command": "gridvisit 1 5 2 15 {r} false",
+     "estimatedduration": "3m"
    }
  ],
  "constraints": {
