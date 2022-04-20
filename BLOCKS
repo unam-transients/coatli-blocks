@@ -1,47 +1,49 @@
 # COATLI/OAN Blocks
 #
-# This file defines the blocks that are loaded into the queue.
+# This file defines the blocks that are loaded or unloaded.
 #
 # Empty lines and lines beginning with # are ignored.
 #
-# The first three fields are:
+# The first four fields are:
 #
-# 1. Priority. A letter, with a being highest priority and z being lowest
+# 1. Action. Either "load" or "unload".
+#
+# 2. Priority. A letter, with a being highest priority and z being lowest
 # priority.
 #
-# 2. Duplicates. The number of copies of the block file that are loaded into the
+# 3. Duplicates. The number of copies of the block file that are loaded into the
 # queue. This is useful when breaking long observations into shorter blocks;
 # simply set this field to the number times you want to run the shorter block.
 #
-# 3. Block file. This can be a file name or a shell glob pattern to match a set
+# 4. Block file. This can be a file name or a shell glob pattern to match a set
 # of file names. Omit the trailing ".json".
 #
-# After the first three columns, it is possible to add a time specification:
+# After the first four columns, it is possible to add a time specification:
 #
-# - day M N. Load the files into the queue every N days. Specifically, only load
+# - day M N. Carry out the action every N days. Specifically, only load
 # the block files into the queue if M = D mod N, in which D is the day of the
 # year (1 to 366).
 #
-# - on YYYMMDD. Load the files into the queue on the specified UTC date.
+# - on YYYMMDD. Carry out the action on the specified UTC date.
 #
-# If no time specification is given, the block files are loaded into the queue
-# every day.
+# If no time specification is given, the action is carried out every day.
 
-a 1 0004-initial-focus-*
-b 1 0004-focus-*
+load a 1 0004-initial-focus-*
+load b 1 0004-focus-*
 
-f 1 2001-costero-0
-g 1 2000-fast-guiding-0 day 0 2
-h 1 2003-gonzalez-1 
-i0 1 2002-pereyra-0
-i1 1 2002-pereyra-1
-i2 1 2002-pereyra-2
+load h 1 2003-gonzalez-1 
+load i0 1 2002-pereyra-0
+load i1 1 2002-pereyra-1
+load i2 1 2002-pereyra-2
 
-x 1 0001-twilight-flats-evening-0
-y 1 0002-biases-east-0
-y 1 0002-biases-west-0
-z 1 0003-darks-east-0
-z 1 0003-darks-west-0
+load x 1 0001-twilight-flats-evening-0
+load y 1 0002-biases-east-0
+load y 1 0002-biases-west-0
+load z 1 0003-darks-east-0
+load z 1 0003-darks-west-0
 
 # h 3 2003-gonzalez-0     on 20220218
 # i3 1 2004-becerra-0
+
+unload f 1 2001-costero-0
+unload g 1 2000-fast-guiding-0 day 0 2
