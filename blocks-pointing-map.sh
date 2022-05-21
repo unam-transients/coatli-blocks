@@ -7,7 +7,6 @@ then
   exit
 fi
 
-
 # Pointing map visits typically take about 20 seconds when the slew is short and
 # 60 seconds when the slew is longer.
 
@@ -70,7 +69,7 @@ do
       "identifier": "0",
       "name": "pointing map",
       "targetcoordinates": {
-        "type"   : "fixed",
+        "type"   : "equatorial",
         "ha"     : "$ha",
         "delta"  : "$delta",
         "equinox": "2000"
