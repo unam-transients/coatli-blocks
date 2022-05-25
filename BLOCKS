@@ -40,6 +40,7 @@ load y 1 0002-biases-east-0
 load y 1 0002-biases-west-0
 load z 1 0003-darks-east-0
 load z 1 0003-darks-west-0
+load z 1 0013-signal-chain-*
 
 # h 3 2003-gonzalez-0     date 20220218
 # i3 1 2004-becerra-0
