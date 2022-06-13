@@ -1,0 +1,52 @@
+{
+    "project": {
+        "identifier": "2003",
+        "name": "Gonzalez Diego"
+    },
+    "identifier": "0",
+    "name": "BD +26 2606",
+    "visits": [
+        {
+            "identifier": "1000",
+            "name": "pointing correction",
+            "targetcoordinates": {
+                "type": "equatorial",
+                "alpha": "14:49:02.35",
+                "delta": "+25:42:09.19",
+                "equinox": "2000"
+            },
+            "command": "pointingcorrectionvisit",
+            "estimatedduration": "1m"
+        },
+        {
+            "identifier": "1001",
+            "name": "focus",
+            "targetcoordinates": {
+                "type": "equatorial",
+                "alpha": "14:49:02.35",
+                "delta": "+25:42:09.19",
+                "equinox": "2000"
+            },
+            "command": "focusvisit",
+            "estimatedduration": "2m"
+        },
+        {
+            "identifier": "0",
+            "name": "science",
+            "targetcoordinates": {
+                "type": "equatorial",
+                "alpha": "14:49:02.35",
+                "delta": "+25:42:09.19",
+                "equinox": "2000"
+            },
+            "command": "gridvisit 1 5 1 60 {g r i z} false",
+            "estimatedduration": "10m"
+        }
+    ],
+    "constraints": {
+        "maxskybrightness": "bright",
+        "maxairmass": "1.5",
+        "minmoondistance": "15d"
+    },
+    "persistent": "false"
+}
