@@ -3,16 +3,16 @@
         "identifier": "2003",
         "name": "Gonzalez Diego"
     },
-    "identifier": "0",
-    "name": "BD+25 3941",
+    "identifier": "1",
+    "name": "BD+17 4708",
     "visits": [
         {
             "identifier": "1000",
             "name": "pointing correction",
             "targetcoordinates": {
                 "type": "equatorial",
-                "alpha": "19:42:21.90",
-                "delta": "+26:06:01.00",
+                "alpha": "22:11:31.37",
+                "delta": "+18:05:34.17",
                 "equinox": "2000"
             },
             "command": "pointingcorrectionvisit",
@@ -23,20 +23,20 @@
             "name": "focus",
             "targetcoordinates": {
                 "type": "equatorial",
-                "alpha": "19:42:21.90",
-                "delta": "+26:06:01.0",
+                "alpha": "22:11:31.37",
+                "delta": "+18:05:34.17",
                 "equinox": "2000"
             },
             "command": "focusvisit",
             "estimatedduration": "2m"
         },
         {
-            "identifier": "0",
+            "identifier": "1",
             "name": "science",
             "targetcoordinates": {
                 "type": "equatorial",
-                "alpha": "19:42:21.90",
-                "delta": "+26:06:01.0",
+                "alpha": "22:11:31.370",
+                "delta": "+18:05:34.17",
                 "equinox": "2000"
             },
             "command": "gridvisit 1 5 1 60 {g r i z} false",
