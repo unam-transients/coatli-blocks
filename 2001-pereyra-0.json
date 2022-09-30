@@ -1,0 +1,136 @@
+{
+ "project": {
+   "identifier": "2001",
+   "name": "Pereyra Cyg X-2"
+ },
+ "identifier": "0",
+ "name": "Trapezium",
+ "visits": [
+   {
+     "identifier": "1000",
+     "name": "pointing correction",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "pointingcorrectionvisit 5 r",
+     "estimatedduration": "1m"
+   },
+   {
+     "identifier": "1001",
+     "name": "focus",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "focusvisit 5 z",
+     "estimatedduration": "2m"
+   },
+   {
+     "identifier": "0",
+     "name": "science - g",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "gridvisit 1 9 1 20 g",
+     "estimatedduration": "1m"
+   },
+   {
+     "identifier": "1",
+     "name": "science - r",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "gridvisit 1 9 1 20 r",
+     "estimatedduration": "1m"
+   },
+   {
+     "identifier": "2",
+     "name": "science - i",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "gridvisit 1 9 1 20 i",
+     "estimatedduration": "1m"
+   },
+   {
+     "identifier": "3",
+     "name": "science - z",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "gridvisit 1 9 1 20 z",
+     "estimatedduration": "1m"
+   },
+   {
+     "identifier": "4",
+     "name": "science - g",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "gridvisit 1 9 1 20 g 1MHz",
+     "estimatedduration": "1m"
+   },
+   {
+     "identifier": "5",
+     "name": "science - r",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "gridvisit 1 9 1 20 r 1MHz",
+     "estimatedduration": "1m"
+   },
+   {
+     "identifier": "6",
+     "name": "science - i",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "gridvisit 1 9 1 20 i 1MHz",
+     "estimatedduration": "1m"
+   },
+   {
+     "identifier": "7",
+     "name": "science - z",
+     "targetcoordinates": {
+       "type"   : "equatorial",
+       "alpha"  : "21:44:41.1544",
+       "delta"  : "+38:19:17.066",
+       "equinox": "2000"
+     },
+     "command": "gridvisit 1 9 1 20 z 1MHz",
+     "estimatedduration": "1m"
+   }
+ ],
+ "constraints": {
+   "maxskybrightness": "astronomicaltwilight",
+   "maxairmass": "1.3",
+   "minmoondistance": "5d"
+ },
+ "persistent": "false"
+}
