@@ -31,10 +31,7 @@
 load a 1 0004-initial-focus-*
 load b 1 0004-focus-*
 
-# load h0 1 2003-gonzalez-1 
-load d0 1 2003-gonzalez-2 
-load i0 1 2002-pereyra-1
-load i1 1 2002-pereyra-2
+load d0 1 2001-pereyra-0
 
 load x 1 0001-twilight-flats-evening-0
 load y 1 0002-biases-east-0
@@ -42,9 +39,3 @@ load y 1 0002-biases-west-0
 load z 1 0003-darks-east-0
 load z 1 0003-darks-west-0
 load z 1 0013-signal-chain-*
-
-# h 3 2003-gonzalez-0     date 20220218
-# i3 1 2004-becerra-0
-
-unload f 1 2001-costero-0
-unload g 1 2000-fast-guiding-0 day 0 2
