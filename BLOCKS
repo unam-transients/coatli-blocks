@@ -31,8 +31,6 @@
 load a 1 0004-initial-focus-*
 load b 1 0004-focus-*
 
-load d0 1 2001-pereyra-0
-
 load x 1 0001-twilight-flats-evening-0
 load y 1 0002-biases-east-0
 load y 1 0002-biases-west-0
