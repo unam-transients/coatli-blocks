@@ -37,3 +37,5 @@ load y 1 0002-biases-west-0
 load z 1 0003-darks-east-0
 load z 1 0003-darks-west-0
 load z 1 0013-signal-chain-*
+
+load d 1 2001-pereyra-0
