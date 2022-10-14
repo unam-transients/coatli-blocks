@@ -134,18 +134,6 @@ EOF
       },
       "command": "focusvisit",
       "estimatedduration": "1m"
-    },
-    {
-      "identifier": "0",
-      "name": "focus witness",
-      "targetcoordinates": {
-        "type"   : "equatorial",
-        "alpha"  : "$alpha",
-        "delta"  : "$delta",
-        "equinox": "2000"
-      },
-      "command": "focuswitnessvisit",
-      "estimatedduration": "1m"
     }
   ],
   "constraints": {
