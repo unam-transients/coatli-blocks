@@ -4,15 +4,15 @@
         "name": "Gonzalez Diego"
     },
     "identifier": "1",
-    "name": "2XMM J183251.4-100106",
+    "name": "J190519.41+301524.4",
     "visits": [
         {
             "identifier": "1000",
             "name": "pointing correction",
             "targetcoordinates": {
                 "type": "equatorial",
-                "alpha": "18:32:51.65",
-                "delta": "-10:01:06.7",
+                "alpha": "19:05:19.40",
+                "delta": "+30:15:24.55",
                 "equinox": "2000"
             },
             "command": "pointingcorrectionvisit",
@@ -23,8 +23,8 @@
             "name": "focus",
             "targetcoordinates": {
                 "type": "equatorial",
-                "alpha": "18:32:51.65",
-                "delta": "-10:01:06.7",
+                "alpha": "19:05:19.405",
+                "delta": "+30:15:24.55",
                 "equinox": "2000"
             },
             "command": "focusvisit",
@@ -35,8 +35,8 @@
             "name": "science",
             "targetcoordinates": {
                 "type": "equatorial",
-                "alpha": "18:32:51.65",
-                "delta": "-10:01:06.7",
+                "alpha": "19:05:19.40",
+                "delta": "+30:15:24.55",
                 "equinox": "2000"
             },
             "command": "gridvisit 1 5 2 60 {g r i z} false",
