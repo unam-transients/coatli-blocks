@@ -39,6 +39,4 @@ load z 1 0003-darks-west-0
 load z 1 0013-signal-chain-*
 
 load d 1 2001-pereyra-0
-load d 2 2001-gonzalez-3
-load d 3 2001-gonzalez-3
-load d 4 2001-gonzalez-3
+load e 1 2002-roman-0
