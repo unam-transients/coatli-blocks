@@ -48,5 +48,5 @@
    "maxairmass": "1.5",
    "minmoondistance": "5d"
  },
- "persistent": "true"
+ "persistent": "false"
 }
