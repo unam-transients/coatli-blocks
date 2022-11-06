@@ -1,0 +1,52 @@
+{
+  "project": {
+    "identifier": "2003",
+    "name": "Costero Trapezium -- West"
+  },
+  "identifier": "3",
+  "name": "Trapezium",
+  "visits": [
+    {
+      "identifier": "1000",
+      "name": "pointing correction",
+      "targetcoordinates": {
+        "type": "equatorial",
+        "alpha": "05:35:16.46",
+        "delta": "-05:23:22.8",
+        "equinox": "2000"
+      },
+      "command": "pointingcorrectionvisit 5 z conventionaldefault",
+      "estimatedduration": "1m"
+    },
+    {
+      "identifier": "1001",
+      "name": "focus",
+      "targetcoordinates": {
+        "type": "equatorial",
+        "alpha": "05:35:16.46",
+        "delta": "-05:23:22.8",
+        "equinox": "2000"
+      },
+      "command": "focusvisit 5 z fastguidingdefault",
+      "estimatedduration": "2m"
+    },
+    {
+      "identifier": "0",
+      "name": "science",
+      "targetcoordinates": {
+        "type": "equatorial",
+        "alpha": "05:35:16.46",
+        "delta": "-05:23:22.8",
+        "equinox": "2000"
+      },
+      "command": "gridvisit 1 5 1 15 {470/10 640/10 i z} true fastguidingdefault",
+      "estimatedduration": "8m"
+    }
+  ],
+  "constraints": {
+    "maxskybrightness": "nauticaltwilight",
+    "minha": "+2.0h",
+    "minmoondistance": "5d"
+  },
+  "persistent": "false"
+}
