@@ -32,7 +32,7 @@
     },
     {
       "identifier": "0",
-      "name": "science - 470/10",
+      "name": "science",
       "targetcoordinates": {
         "type": "equatorial",
         "alpha": "05:35:16.46",
@@ -45,7 +45,7 @@
   ],
   "constraints": {
     "maxskybrightness": "nauticaltwilight",
-    "maxairmass": "3",
+    "maxzenithdistance": "72d",
     "minmoondistance": "5d"
   },
   "persistent": "true"
