@@ -1,7 +1,7 @@
 {
   "project": {
     "identifier": "2003",
-    "name": "Costero Trapezium"
+    "name": "Costero Trapezium -- Eclipse"
   },
   "identifier": "0",
   "name": "Trapezium",
@@ -39,50 +39,14 @@
         "delta": "-05:23:22.8",
         "equinox": "2000"
       },
-      "command": "gridvisit 1 5 1 15 470/10 true fastguidingdefault",
-      "estimatedduration": "2m"
-    },
-    {
-      "identifier": "1",
-      "name": "science - 640/10",
-      "targetcoordinates": {
-        "type": "equatorial",
-        "alpha": "05:35:16.46",
-        "delta": "-05:23:22.8",
-        "equinox": "2000"
-      },
-      "command": "gridvisit 1 5 1 15 640/10 true fastguidingdefault",
-      "estimatedduration": "2m"
-    },
-    {
-      "identifier": "2",
-      "name": "science - i",
-      "targetcoordinates": {
-        "type": "equatorial",
-        "alpha": "05:35:16.46",
-        "delta": "-05:23:22.8",
-        "equinox": "2000"
-      },
-      "command": "gridvisit 1 5 1 15 i true fastguidingdefault",
-      "estimatedduration": "2m"
-    },
-    {
-      "identifier": "3",
-      "name": "science - z",
-      "targetcoordinates": {
-        "type": "equatorial",
-        "alpha": "05:35:16.46",
-        "delta": "-05:23:22.8",
-        "equinox": "2000"
-      },
-      "command": "gridvisit 1 5 1 15 z true fastguidingdefault",
-      "estimatedduration": "2m"
+      "command": "gridvisit 4 5 1 15 {470/10 640/10 i z} true fastguidingdefault",
+      "estimatedduration": "24m"
     }
   ],
   "constraints": {
-    "maxskybrightness": "astronomicaltwilight",
-    "maxha": "-2.0h",
+    "maxskybrightness": "nauticaltwilight",
+    "maxairmass": "3",
     "minmoondistance": "5d"
   },
-  "persistent": "false"
+  "persistent": "true"
 }
