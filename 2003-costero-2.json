@@ -3,7 +3,7 @@
     "identifier": "2003",
     "name": "Costero Trapezium -- Transiting"
   },
-  "identifier": "1",
+  "identifier": "2",
   "name": "Trapezium",
   "visits": [
     {
@@ -45,8 +45,8 @@
   ],
   "constraints": {
     "maxskybrightness": "nauticaltwilight",
-    "minha": "-1.0h",
-    "maxha": "+1.0h",
+    "minha": "-0.5h",
+    "maxha": "+0.5h",
     "minmoondistance": "5d"
   },
   "persistent": "false"
