@@ -33,10 +33,10 @@ load b 1 0004-focus-*
 load w 1 0004-focus-with-witness-*
 
 load x 1 0001-twilight-flats-evening-0
-load y 1 0002-biases-east-0
-load y 1 0002-biases-west-0
-load z 1 0003-darks-east-0
-load z 1 0003-darks-west-0
+load y 3 0002-biases-east-0
+load y 3 0002-biases-west-0
+load z 3 0003-darks-east-0
+load z 3 0003-darks-west-0
 load z 1 0013-signal-chain-*
 
 load d 1 2001-pereyra-0
