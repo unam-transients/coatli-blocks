@@ -71,8 +71,8 @@ do
       "name": "focus",
       "targetcoordinates": {
         "type"   : "equatorial",
-        "alpha"  : "$alpha",
-        "delta"  : "$delta",
+        "alpha"  : "$ALPHA",
+        "delta"  : "$DELTA",
         "equinox": "2000"
       },
       "command": "focusvisit",
@@ -83,8 +83,8 @@ do
       "name": "focus witness",
       "targetcoordinates": {
         "type"   : "equatorial",
-        "alpha"  : "$alpha",
-        "delta"  : "$delta",
+        "alpha"  : "$ALPHA",
+        "delta"  : "$DELTA",
         "equinox": "2000"
       },
       "command": "focuswitnessvisit",
@@ -116,8 +116,8 @@ EOF
       "name": "pointing correction",
       "targetcoordinates": {
         "type"   : "equatorial",
-        "alpha"  : "$alpha",
-        "delta"  : "$delta",
+        "alpha"  : "$ALPHA",
+        "delta"  : "$DELTA",
         "equinox": "2000"
       },
       "command": "pointingcorrectionvisit",
@@ -128,8 +128,8 @@ EOF
       "name": "focus",
       "targetcoordinates": {
         "type"   : "equatorial",
-        "alpha"  : "$alpha",
-        "delta"  : "$delta",
+        "alpha"  : "$ALPHA",
+        "delta"  : "$DELTA",
         "equinox": "2000"
       },
       "command": "focusvisit",
@@ -141,7 +141,7 @@ EOF
     "minha": "-3h",
     "maxha": "+3h",
     "minmoondistance": "15d",
-    "minfocusdelay": "1200"
+    "minfocusdelay": "1800"
   },
   "persistent": "true"
 }
