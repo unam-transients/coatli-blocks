@@ -77,18 +77,6 @@ do
       },
       "command": "focusvisit",
       "estimatedduration": "1m"
-    },
-    {
-      "identifier": "0",
-      "name": "focus witness",
-      "targetcoordinates": {
-        "type"   : "equatorial",
-        "alpha"  : "$ALPHA",
-        "delta"  : "$DELTA",
-        "equinox": "2000"
-      },
-      "command": "focuswitnessvisit",
-      "estimatedduration": "1m"
     }
   ],
   "constraints": {
@@ -142,6 +130,63 @@ EOF
     "maxha": "+3h",
     "minmoondistance": "15d",
     "minfocusdelay": "1800"
+  },
+  "persistent": "true"
+}
+EOF
+
+  cat <<EOF >0004-focus-with-witness-$suffix.json
+{
+  "project": {
+    "identifier": "0004",
+    "name": "focusing"
+  },
+  "identifier": "$blockid",
+  "name": "focusing near ${suffix}h +25d",
+  "visits": [
+    {
+      "identifier": "1000",
+      "name": "pointing correction",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "$ALPHA",
+        "delta"  : "$DELTA",
+        "equinox": "2000"
+      },
+      "command": "pointingcorrectionvisit",
+      "estimatedduration": "1m"
+    },
+    {
+      "identifier": "1001",
+      "name": "focus",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "$ALPHA",
+        "delta"  : "$DELTA",
+        "equinox": "2000"
+      },
+      "command": "focusvisit",
+      "estimatedduration": "1m"
+    },
+    {
+      "identifier": "0",
+      "name": "focus witness",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "$ALPHA",
+        "delta"  : "$DELTA",
+        "equinox": "2000"
+      },
+      "command": "focuswitnessvisit",
+      "estimatedduration": "1m"
+    }
+  ],
+  "constraints": {
+    "maxskybrightness": "nauticaltwilight",
+    "minha": "-3h",
+    "maxha": "+3h",
+    "minmoondistance": "15d",
+    "minfocusdelay": "1200"
   },
   "persistent": "true"
 }
