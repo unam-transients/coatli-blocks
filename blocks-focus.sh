@@ -90,7 +90,7 @@ do
 }
 EOF
 
-  cat <<EOF >0004-focus-$suffix.json
+  cat <<EOF >0004-focus-without-witness-$suffix.json
 {
   "project": {
     "identifier": "0004",
