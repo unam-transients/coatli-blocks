@@ -1,0 +1,64 @@
+{
+  "project": {
+    "identifier": "2004",
+    "name": "satellites"
+  },
+  "identifier": "0",
+  "name": "BW3",
+  "visits": [
+    {
+      "identifier": "0",
+      "name": "BW3",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "02:58:38.86",
+        "delta"  : "+76:12:40.64",
+        "equinox": "2000"
+      },
+      "command": "satellitevisit 2022-11-12T11:57:14 1 10",
+      "estimatedduration": "1m"
+    },
+    {
+      "identifier": "1",
+      "name": "BW3",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "11:28:59.94",
+        "delta"  : "+52:00:57.27",
+        "equinox": "2000"
+      },
+      "command": "satellitevisit 2022-11-12T11:58:43 1 10",
+      "estimatedduration": "1m"
+    },
+    {
+      "identifier": "2",
+      "name": "BW3",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "12:22:37.15",
+        "delta"  : "+05:17:55.84",
+        "equinox": "2000"
+      },
+      "command": "satellitevisit 2022-11-12T12:00:10 1 10",
+      "estimatedduration": "1m"
+    }
+  ],
+  "constraints": {
+  },
+  "persistent": "true"
+}
+
+// Date (UT): 2022-11-12
+// Time (UT) 12:57:14
+// RA: 02:58:38.86
+// DEC: +76:12:40.64
+
+// Date (UT): 2022-11-12
+// Time (UT): 12:58:43
+// RA: 11:28:59.94
+// DEC: +52:00:57.27
+
+// Date (UT): 2022-11-12
+// Time (UT): 13:00:10
+// RA: 12:22:37.15
+// DEC: +05:17:55.84
