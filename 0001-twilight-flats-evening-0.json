@@ -7,7 +7,7 @@
   "visits": [
     {
       "identifier": "7",
-      "name": "twilight flats -- 656/3",
+      "name": "twilight flats in 656/3",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
@@ -18,7 +18,7 @@
     },
     {
       "identifier": "6",
-      "name": "twilight flats -- 640/10",
+      "name": "twilight flats in 640/10",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
@@ -30,7 +30,7 @@
     // 515/10 was removed on 2021-11-21.
     {
       "identifier": "4",
-      "name": "twilight flats -- 470/10",
+      "name": "twilight flats in 470/10",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
@@ -41,7 +41,7 @@
     },
     {
       "identifier": "3",
-      "name": "twilight flats -- z",
+      "name": "twilight flats in z",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
@@ -52,7 +52,7 @@
     },
     {
       "identifier": "2",
-      "name": "twilight flats -- i",
+      "name": "twilight flats in i",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
@@ -63,7 +63,7 @@
     },
     {
       "identifier": "1",
-      "name": "twilight flats -- r",
+      "name": "twilight flats in r",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
@@ -74,7 +74,7 @@
     },
     {
       "identifier": "0",
-      "name": "twilight flats -- g",
+      "name": "twilight flats in g",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
