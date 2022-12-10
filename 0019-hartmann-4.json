@@ -1,0 +1,27 @@
+{
+  "project": {
+    "identifier": "0019",
+    "name": "hartmann tests"
+  },
+  "identifier": "4",
+  "name": "hartmann test on HR 1790 gam Ori (Bellatrix)",
+  "visits": [
+    {
+      "identifier": "1",
+      "name": "hartmann test",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "05:25:07.86325",
+        "delta"  : "+06:20:58.9318",
+        "equinox": "2000"
+      },
+      "command": "hartmanntestvisit 1800 10 470/10 10",
+      "estimatedduration": "5m"
+    }
+  ],
+  "constraints": {
+    "maxskybrightness": "civiltwilight",
+    "minmoondistance": "15d"
+  },
+  "persistent": "true"
+}
