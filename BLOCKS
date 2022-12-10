@@ -39,25 +39,27 @@ load z 3 0003-darks-east-0
 load z 3 0003-darks-west-0
 load z 1 0013-signal-chain-*
 
-load d 1 2001-pereyra-0
-load e 1 2002-roman-0
+#load d 1 2001-pereyra-0
+#load e 1 2002-roman-0
 
 # This is for the Trapezium eclipse block, which observes all night. This block
 # is only loaded on nights with eclipses.
 
-unload m 1 2003-costero-0
-load   m 1 2003-costero-0 date 20221107
-load   m 1 2003-costero-0 date 20221110
-load   m 1 2003-costero-0 date 20221112
-load   m 1 2003-costero-0 date 20221113
-load   m 1 2003-costero-0 date 20221116
-load   m 1 2003-costero-0 date 20221119
-load   m 1 2003-costero-0 date 20221123
-load   m 1 2003-costero-0 date 20221126
+#unload m 1 2003-costero-0
+#load   m 1 2003-costero-0 date 20221107
+#load   m 1 2003-costero-0 date 20221110
+#load   m 1 2003-costero-0 date 20221112
+#load   m 1 2003-costero-0 date 20221113
+#load   m 1 2003-costero-0 date 20221116
+#load   m 1 2003-costero-0 date 20221119
+#load   m 1 2003-costero-0 date 20221123
+#load   m 1 2003-costero-0 date 20221126
 
 # These are the nightly Trapezium monitoring blocks.
 
-load n 1 2003-costero-1
-load n 1 2003-costero-2
-load n 1 2003-costero-3
+#load n 1 2003-costero-1
+#load n 1 2003-costero-2
+#load n 1 2003-costero-3
+
+load q 1 0012-focus-offsets-*
 
