@@ -6,37 +6,14 @@
   "identifier": "0",
   "visits": [
     {
-      "identifier": "7",
-      "name": "twilight flats in 656/3",
-      "targetcoordinates": {
-        "type": "fixed",
-        "ha": "-3h",
-        "delta": "+45d"
-      },
-      "command": "twilightflatsvisit 7 656/3",
-      "estimatedduration": "2m"
-    },
-    {
-      "identifier": "6",
-      "name": "twilight flats in 640/10",
-      "targetcoordinates": {
-        "type": "fixed",
-        "ha": "-3h",
-        "delta": "+45d"
-      },
-      "command": "twilightflatsvisit 7 640/10",
-      "estimatedduration": "2m"
-    },
-    // 515/10 was removed on 2021-11-21.
-    {
       "identifier": "4",
-      "name": "twilight flats in 470/10",
+      "name": "twilight flats in y",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit 7 470/10",
+      "command": "twilightflatsvisit 7 y",
       "estimatedduration": "2m"
     },
     {
@@ -82,7 +59,18 @@
       },
       "command": "twilightflatsvisit 7 g",
       "estimatedduration": "2m"
-    }
+    },
+    {
+      "identifier": "5",
+      "name": "twilight flats in w",
+      "targetcoordinates": {
+        "type": "fixed",
+        "ha": "-3h",
+        "delta": "+45d"
+      },
+      "command": "twilightflatsvisit 7 w",
+      "estimatedduration": "2m"
+    },
   ],
   "constraints": {
     "minmoondistance": "30d",
