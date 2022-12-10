@@ -1,0 +1,27 @@
+{
+  "project": {
+    "identifier": "0019",
+    "name": "hartmann tests"
+  },
+  "identifier": "8",
+  "name": "hartmann test on HR 2891 alp Gem (Castor)",
+  "visits": [
+    {
+      "identifier": "1",
+      "name": "hartmann test",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "07:34:36.0",
+        "delta"  : "+31:53:18",
+        "equinox": "2000"
+      },
+      "command": "hartmanntestvisit 1800 10 470/10 10",
+      "estimatedduration": "5m"
+    }
+  ],
+  "constraints": {
+    "maxskybrightness": "civiltwilight",
+    "minmoondistance": "15d"
+  },
+  "persistent": "true"
+}

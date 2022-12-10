@@ -1,0 +1,27 @@
+{
+  "project": {
+    "identifier": "0019",
+    "name": "hartmann tests"
+  },
+  "identifier": "7",
+  "name": "hartmann test on HR 2990 bet Gem (Pollux)",
+  "visits": [
+    {
+      "identifier": "0",
+      "name": "hartmann test",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "07:45:18.9",
+        "delta"  : "+28:01:34",
+        "equinox": "2000"
+      },
+      "command": "hartmanntestvisit 1800 10 470/10 10",
+      "estimatedduration": "5m"
+    }
+  ],
+  "constraints": {
+    "maxskybrightness": "civiltwilight",
+    "minmoondistance": "15d"
+  },
+  "persistent": "true"
+}

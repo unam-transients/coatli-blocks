@@ -1,0 +1,27 @@
+{
+  "project": {
+    "identifier": "0019",
+    "name": "hartmann tests"
+  },
+  "identifier": "3",
+  "name": "hartmann test on HR 1708 alp Aur (Capella)",
+  "visits": [
+    {
+      "identifier": "1",
+      "name": "hartmann test",
+      "targetcoordinates": {
+        "type"   : "equatorial",
+        "alpha"  : "05:16:41.35871",
+        "delta"  : "+45:59:52.76933",
+        "equinox": "2000"
+      },
+      "command": "hartmanntestvisit 1800 10 470/10 10",
+      "estimatedduration": "5m"
+    }
+  ],
+  "constraints": {
+    "maxskybrightness": "civiltwilight",
+    "minmoondistance": "15d"
+  },
+  "persistent": "true"
+}
