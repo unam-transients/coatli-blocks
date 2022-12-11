@@ -70,7 +70,7 @@
       },
       "command": "twilightflatsvisit 7 w",
       "estimatedduration": "2m"
-    },
+    }
   ],
   "constraints": {
     "minmoondistance": "30d",
