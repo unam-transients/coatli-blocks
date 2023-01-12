@@ -61,5 +61,7 @@ load z 1 0013-signal-chain-*
 #load n 1 2003-costero-2
 #load n 1 2003-costero-3
 
-load q 1 0012-focus-offsets-*
+#load q 1 0012-focus-offsets-*
+
+#load u 1 0008-pointing-map-*
 
