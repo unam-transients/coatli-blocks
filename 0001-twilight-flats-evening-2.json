@@ -1,19 +1,19 @@
 {
   "project": {
     "identifier": "0001",
-    "name": "twilight flats -- grizw"
+    "name": "twilight flats -- griyw"
   },
   "identifier": "0",
   "visits": [
     {
-      "identifier": "3",
-      "name": "twilight flats in z",
+      "identifier": "4",
+      "name": "twilight flats in y",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit 7 z",
+      "command": "twilightflatsvisit 7 y",
       "estimatedduration": "2m"
     },
     {
