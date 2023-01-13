@@ -32,7 +32,10 @@ load a 1 0004-initial-focus-*
 load b 1 0004-focus-without-witness-*
 load w 1 0004-focus-with-witness-*
 
-load x 1 0001-twilight-flats-evening-0
+load x 1 0001-twilight-flats-evening-0 day 4 0
+load x 1 0001-twilight-flats-evening-1 day 4 1
+load x 1 0001-twilight-flats-evening-2 day 4 2
+load x 1 0001-twilight-flats-evening-3 day 4 3
 load y 3 0002-biases-east-0
 load y 3 0002-biases-west-0
 load z 3 0003-darks-east-0
@@ -61,7 +64,7 @@ load z 1 0013-signal-chain-*
 #load n 1 2003-costero-2
 #load n 1 2003-costero-3
 
-#load q 1 0012-focus-offsets-*
+load q 1 0012-focus-offsets-*
 
 #load u 1 0008-pointing-map-*
 

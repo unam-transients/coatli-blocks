@@ -1,63 +1,52 @@
 {
   "project": {
     "identifier": "0001",
-    "name": "twilight flats -- grizw"
+    "name": "twilight flats -- BVRIs"
   },
   "identifier": "0",
   "visits": [
     {
-      "identifier": "3",
-      "name": "twilight flats in z",
+      "identifier": "13",
+      "name": "twilight flats in Is",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit 7 z",
+      "command": "twilightflatsvisit 7 Is",
       "estimatedduration": "2m"
     },
     {
-      "identifier": "2",
-      "name": "twilight flats in i",
+      "identifier": "12",
+      "name": "twilight flats in R",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit 7 i",
+      "command": "twilightflatsvisit 7 R",
       "estimatedduration": "2m"
     },
     {
-      "identifier": "1",
-      "name": "twilight flats in r",
+      "identifier": "11",
+      "name": "twilight flats in V",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit 7 r",
+      "command": "twilightflatsvisit 7 V",
       "estimatedduration": "2m"
     },
     {
-      "identifier": "0",
-      "name": "twilight flats in g",
+      "identifier": "10",
+      "name": "twilight flats in B",
       "targetcoordinates": {
         "type": "fixed",
         "ha": "-3h",
         "delta": "+45d"
       },
-      "command": "twilightflatsvisit 7 g",
-      "estimatedduration": "2m"
-    },
-    {
-      "identifier": "5",
-      "name": "twilight flats in w",
-      "targetcoordinates": {
-        "type": "fixed",
-        "ha": "-3h",
-        "delta": "+45d"
-      },
-      "command": "twilightflatsvisit 7 w",
+      "command": "twilightflatsvisit 7 B",
       "estimatedduration": "2m"
     }
   ],
