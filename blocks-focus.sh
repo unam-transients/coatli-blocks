@@ -222,20 +222,8 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "coarsefocusvisit 1 g",
+      "command": "coarsefocusvisit 5 g",
        "estimatedduration": "1m"
-    },
-    {
-      "identifier": "0",
-      "name": "focus in g",
-      "targetcoordinates": {
-        "type"   : "equatorial",
-        "alpha"  : "$ALPHA",
-        "delta"  : "$DELTA",
-        "equinox": "2000"
-      },
-      "command": "focusvisit 5 g",
-      "estimatedduration": "2m"
     },
     {
       "identifier": "1001",
@@ -246,20 +234,8 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "coarsefocusvisit 1 r",
+      "command": "coarsefocusvisit 5 r",
        "estimatedduration": "1m"
-    },
-    {
-      "identifier": "1",
-      "name": "focus in r",
-      "targetcoordinates": {
-        "type"   : "equatorial",
-        "alpha"  : "$ALPHA",
-        "delta"  : "$DELTA",
-        "equinox": "2000"
-      },
-      "command": "focusvisit 5 r",
-      "estimatedduration": "2m"
     },
     {
       "identifier": "1002",
@@ -270,20 +246,8 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "coarsefocusvisit 1 i",
+      "command": "coarsefocusvisit 5 i",
        "estimatedduration": "1m"
-    },
-    {
-      "identifier": "2",
-      "name": "focus in i",
-      "targetcoordinates": {
-        "type"   : "equatorial",
-        "alpha"  : "$ALPHA",
-        "delta"  : "$DELTA",
-        "equinox": "2000"
-      },
-      "command": "focusvisit 5 i",
-      "estimatedduration": "2m"
     },
     {
       "identifier": "1003",
@@ -294,20 +258,8 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "coarsefocusvisit 1 z",
+      "command": "coarsefocusvisit 5 z",
        "estimatedduration": "1m"
-    },
-    {
-      "identifier": "3",
-      "name": "focus in z",
-      "targetcoordinates": {
-        "type"   : "equatorial",
-        "alpha"  : "$ALPHA",
-        "delta"  : "$DELTA",
-        "equinox": "2000"
-      },
-      "command": "focusvisit 5 z",
-      "estimatedduration": "2m"
     },
     {
       "identifier": "1004",
@@ -318,20 +270,8 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "coarsefocusvisit 1 y",
+      "command": "coarsefocusvisit 5 y",
        "estimatedduration": "1m"
-    },
-    {
-      "identifier": "4",
-      "name": "focus in y",
-      "targetcoordinates": {
-        "type"   : "equatorial",
-        "alpha"  : "$ALPHA",
-        "delta"  : "$DELTA",
-        "equinox": "2000"
-      },
-      "command": "focusvisit 5 y",
-      "estimatedduration": "2m"
     },
     {
       "identifier": "1005",
@@ -342,20 +282,8 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "coarsefocusvisit 1 w",
+      "command": "coarsefocusvisit 5 w",
        "estimatedduration": "1m"
-    },
-    {
-      "identifier": "5",
-      "name": "focus in w",
-      "targetcoordinates": {
-        "type"   : "equatorial",
-        "alpha"  : "$ALPHA",
-        "delta"  : "$DELTA",
-        "equinox": "2000"
-      },
-      "command": "focusvisit 5 w",
-      "estimatedduration": "2m"
     }
   ],
   "constraints": {
@@ -373,6 +301,8 @@ EOF
 
 # The bright star for 00 was 2252-0220-1 23:58:03.867 +24:20:27.55, but this has a bright companion.
 # The faint star for 00 was 2252-0179-1 23:57:47.895 +24:58:33.35, but this has a bright companion.
+
+# The bright star for 02 is a double.
 
 done <<EOF
 00  0 1729-1345-1 00:01:25.132 +24:29:01.26 1729-0327-1 00:01:42.886 +24:15:11.20
@@ -400,3 +330,7 @@ done <<EOF
 22 22 2207-1050-1 22:00:39.919 +25:06:15.26 2207-2545-1 21:56:58.131 +25:16:04.00
 23 23 2238-1491-1 23:01:02.534 +24:56:30.99 2239-1157-1 23:05:03.396 +24:31:18.68
 EOF
+
+exit
+
+
