@@ -177,18 +177,6 @@ do
       "estimatedduration": "2m"
     },
     {
-      "identifier": "22",
-      "name": "501/3",
-      "targetcoordinates": {
-        "type"   : "equatorial",
-        "alpha"  : "$alpha",
-        "delta"  : "$delta",
-        "equinox": "2000"
-      },
-      "command": "gridvisit 1 5 1 10 501/3 true conventionaldefault",
-      "estimatedduration": "2m"
-    },
-    {
       "identifier": "23",
       "name": "501/8",
       "targetcoordinates": {
