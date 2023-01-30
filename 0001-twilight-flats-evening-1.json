@@ -5,6 +5,39 @@
   },
   "identifier": "0",
   "visits": [
+   {
+      "identifier": "26",
+      "name": "twilight flats in 656/3",
+      "targetcoordinates": {
+        "type": "fixed",
+        "ha": "-3h",
+        "delta": "+45d"
+      },
+      "command": "twilightflatsvisit 7 656/3",
+      "estimatedduration": "2m"
+    },
+    {
+      "identifier": "27",
+      "name": "twilight flats in 656/8",
+      "targetcoordinates": {
+        "type": "fixed",
+        "ha": "-3h",
+        "delta": "+45d"
+      },
+      "command": "twilightflatsvisit 7 656/8",
+      "estimatedduration": "2m"
+    },
+    {
+      "identifier": "23",
+      "name": "twilight flats in 501/8",
+      "targetcoordinates": {
+        "type": "fixed",
+        "ha": "-3h",
+        "delta": "+45d"
+      },
+      "command": "twilightflatsvisit 7 501/8",
+      "estimatedduration": "2m"
+    },
     {
       "identifier": "13",
       "name": "twilight flats in I",
