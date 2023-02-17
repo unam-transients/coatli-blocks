@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm -f 0007-donut-*
+rm -f 0007-donuts-*
 
 if test "$1" = "clean"
 then
@@ -44,7 +44,7 @@ do
     esac
         
 
-    cat <<EOF >0007-donut-$blockid.json
+    cat <<EOF >0007-donuts-$blockid.json
 {
   "project": {
     "identifier": "0007",
