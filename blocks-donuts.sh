@@ -74,7 +74,7 @@ do
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "coarsefocusvisit",
+      "command": "coarsefocussecondaryvisit",
       "estimatedduration": "1m"
     },
     {
