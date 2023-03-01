@@ -30,12 +30,13 @@
 
 load a 1 0004-initial-focus-*
 load b 1 0004-focus-without-witness-*
+load v 1 0005-ab-standard-*
+load w 1 0004-focus-with-witness-*
 
 unload t 1 0007-donuts-*
 unload u 1 0008-pointing-map-*
-load v 1 0005-ab-standard-*
-load w 1 0004-focus-with-witness-*
 unload x 1 0001-twilight-flats-evening-*
+
 load x 1 0001-twilight-flats-evening-0 day 0 4
 load x 1 0001-twilight-flats-evening-1 day 1 4
 load x 1 0001-twilight-flats-evening-2 day 2 4
@@ -45,28 +46,3 @@ load y 3 0002-biases-west-0
 load z 3 0003-darks-east-0
 load z 3 0003-darks-west-0
 load z 1 0013-signal-chain-*
-
-#load d 1 2001-pereyra-0
-#load e 1 2002-roman-0
-
-# This is for the Trapezium eclipse block, which observes all night. This block
-# is only loaded on nights with eclipses.
-
-#unload m 1 2003-costero-0
-#load   m 1 2003-costero-0 date 20221107
-#load   m 1 2003-costero-0 date 20221110
-#load   m 1 2003-costero-0 date 20221112
-#load   m 1 2003-costero-0 date 20221113
-#load   m 1 2003-costero-0 date 20221116
-#load   m 1 2003-costero-0 date 20221119
-#load   m 1 2003-costero-0 date 20221123
-#load   m 1 2003-costero-0 date 20221126
-
-# These are the nightly Trapezium monitoring blocks.
-
-#load n 1 2003-costero-1
-#load n 1 2003-costero-2
-#load n 1 2003-costero-3
-
-load o 1 0007-donuts-*
-
