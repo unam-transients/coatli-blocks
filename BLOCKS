@@ -33,9 +33,9 @@ load b 1 0004-focus-without-witness-*
 load v 1 0005-ab-standard-*
 load w 1 0004-focus-with-witness-*
 
-unload t 1 0007-donuts-*
-unload u 1 0008-pointing-map-*
-unload x 1 0001-twilight-flats-evening-*
+unload * * 0007-donuts-*
+unload * * 0008-pointing-map-*
+unload * * 0001-twilight-flats-evening-*
 
 load x 1 0001-twilight-flats-evening-0 day 0 4
 load x 1 0001-twilight-flats-evening-1 day 1 4
