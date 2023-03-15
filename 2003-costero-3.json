@@ -15,7 +15,7 @@
         "delta": "-05:23:22.8",
         "equinox": "2000"
       },
-      "command": "pointingcorrectionvisit 5 z conventionaldefault",
+      "command": "pointingcorrectionvisit 5 i conventionaldefault",
       "estimatedduration": "1m"
     },
     {
@@ -27,7 +27,7 @@
         "delta": "-05:23:22.8",
         "equinox": "2000"
       },
-      "command": "focusvisit 5 z fastguidingdefault",
+      "command": "focusvisit 5 i fastguidingdefault",
       "estimatedduration": "2m"
     },
     {
@@ -45,8 +45,8 @@
   ],
   "constraints": {
     "maxskybrightness": "nauticaltwilight",
-    "minha": "+1.5h",
-    "minha": "+2.5h",
+//    "minha": "+1.5h",
+//    "minha": "+2.5h",
     "minmoondistance": "5d"
   },
   "persistent": "false"
