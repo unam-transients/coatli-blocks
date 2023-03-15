@@ -29,7 +29,7 @@ do
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "coarsefocussecondaryvisit",
+      "command": "coarsefocusvisit",
       "estimatedduration": "1m"
     },
     {
@@ -75,7 +75,7 @@ do
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "focussecondaryvisit",
+      "command": "focusvisit",
       "estimatedduration": "1m"
     }
   ],
@@ -120,7 +120,7 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "focussecondaryvisit",
+      "command": "focusvisit",
       "estimatedduration": "1m"
     }
   ],
@@ -165,7 +165,7 @@ EOF
         "delta"  : "$DELTA",
         "equinox": "2000"
       },
-      "command": "focussecondaryvisit",
+      "command": "focusvisit",
       "estimatedduration": "1m"
     },
     {
