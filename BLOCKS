@@ -50,3 +50,7 @@ load z 1 0013-signal-chain-*
 load g 1 2003-costero-1
 load g 1 2003-costero-2
 load g 1 2003-costero-3
+
+#These are test blocks for observation of Compact Binaries (CBs)
+load d 1 2001-pereyra-1
+load e 1 2001-castro-0
