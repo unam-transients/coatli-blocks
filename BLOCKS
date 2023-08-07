@@ -28,15 +28,16 @@
 #
 # If no time specification is given, the action is carried out every day.
 
-load a 1 0004-initial-focus-*
-load b 1 0004-focus-without-witness-*
-load v 1 0005-ab-standard-*
-load w 1 0004-focus-with-witness-*
-
 unload * * 0007-donuts-*
 unload * * 0008-pointing-map-*
 unload * * 0001-twilight-flats-evening-*
 
+load a 1 0004-initial-focus-*
+load b 1 0004-focus-without-witness-*
+
+load v 1 0005-ab-standard-*
+load w 1 0004-focus-with-witness-*
+load w 1 0007-donuts-* 
 load x 1 0001-twilight-flats-evening-0 day 0 4
 load x 1 0001-twilight-flats-evening-1 day 1 4
 load x 1 0001-twilight-flats-evening-2 day 2 4
