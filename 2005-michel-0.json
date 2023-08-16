@@ -32,15 +32,15 @@
    },
    {
      "identifier": "0",
-     "name": "science - gri",
+     "name": "science - griVI",
      "targetcoordinates": {
        "type"   : "equatorial",
        "alpha"  : "03:24:41.16",
        "delta"  : "+34:10:45.9",
        "equinox": "2000"
      },
-     "command": "gridvisit 1 9 1 30 {g r i} true conventionaldefault",
-     "estimatedduration": "900s"
+     "command": "gridvisit 1 9 1 30 {g r i V I} true conventionaldefault",
+     "estimatedduration": "1500s"
    }
  ],
  "constraints": {
