@@ -1,0 +1,52 @@
+{
+  "project": {
+    "identifier": "2006",
+    "name": "Castro T CrB"
+  },
+  "identifier": "0",
+  "name": "T CrB",
+  "visits": [
+    {
+      "identifier": "1000",
+      "name": "pointing correction",
+      "targetcoordinates": {
+        "type": "equatorial",
+        "alpha": "15:59:30.16",
+        "delta": "+25:55:12.6",
+        "equinox": "2000"
+      },
+      "command": "pointingcorrectionvisit 5 i conventionaldefault",
+      "estimatedduration": "1m"
+    },
+    {
+      "identifier": "1001",
+      "name": "focus",
+      "targetcoordinates": {
+        "type": "equatorial",
+        "alpha": "15:59:30.16",
+        "delta": "+25:55:12.6",
+        "equinox": "2000"
+      },
+      "command": "focusvisit 5 i fastguidingdefault",
+      "estimatedduration": "2m"
+    },
+    {
+      "identifier": "0",
+      "name": "science",
+      "targetcoordinates": {
+        "type": "equatorial",
+        "alpha": "15:59:30.16",
+        "delta": "+25:55:12.6",
+        "equinox": "2000"
+      },
+      "command": "gridvisit 4 5 1 15 {g r i z} true fastguidingdefault",
+      "estimatedduration": "24m"
+    }
+  ],
+  "constraints": {
+    "maxskybrightness": "nauticaltwilight",
+    "maxzenithdistance": "60d",
+    "minmoondistance": "5d"
+  },
+  "persistent": "true"
+}
