@@ -48,4 +48,5 @@ load z 3 0003-darks-east-0
 load z 3 0003-darks-west-0
 load z 1 0013-signal-chain-*
 
+load f 5 1000-24hdp-0
 load g 1 2006-castro-0
