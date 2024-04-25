@@ -1,0 +1,39 @@
+{
+  "project": {
+    "identifier": "1000",
+    "name": "GW Alerts"
+  },
+  "identifier": "0",
+  "name": "24hdp",
+  "visits": [
+    {
+      "identifier": "1000",
+      "name": "pointing correction",
+      "targetcoordinates": {
+        "type": "equatorial",
+        "alpha": "120.543455d",
+        "delta": "-27.25787d",
+        "equinox": "2000"
+      },
+      "command": "pointingcorrectionvisit 5 i conventionaldefault",
+      "estimatedduration": "1m"
+    },
+    {
+      "identifier": "0",
+      "name": "science",
+      "targetcoordinates": {
+        "type": "equatorial",
+        "alpha": "120.543455d",
+        "delta": "-27.25787d",
+        "equinox": "2000"
+      },
+      "command": "gridvisit 5 5 1 30 {g r i} true",
+      "estimatedduration": "8m"
+    }
+  ],
+  "constraints": {
+    "maxskybrightness": "nauticaltwilight",
+    "minmoondistance": "5d"
+  },
+  "persistent": "false"
+}
